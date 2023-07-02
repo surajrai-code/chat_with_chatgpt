@@ -1,0 +1,89 @@
+.chat-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 300px;
+}
+
+.chat-toggle-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.active .chat-toggle-button {
+  display: none;
+}
+
+.chat-history {
+  position: relative;
+  background-color: white;
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.message {
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.user-message {
+  background-color: blue;
+  color: white;
+  align-self: flex-end;
+  word-wrap: break-word;
+}
+
+.bot-message {
+  background-color: red;
+  align-self: flex-start;
+  word-wrap: break-word;
+}
+
+.chat-input {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  padding: 5px;
+  border: solid;
+  border-radius: 5px;
+  margin-right: 5px;
+  word-wrap: break-word;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-button {
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  border: solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
